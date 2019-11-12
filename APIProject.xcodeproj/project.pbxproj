@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		7FA213BC2379A98900970726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213BB2379A98900970726 /* AppDelegate.swift */; };
 		7FA213BE2379A98900970726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213BD2379A98900970726 /* SceneDelegate.swift */; };
-		7FA213C02379A98900970726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213BF2379A98900970726 /* ViewController.swift */; };
 		7FA213C32379A98900970726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA213C12379A98900970726 /* Main.storyboard */; };
 		7FA213C52379A98B00970726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA213C42379A98B00970726 /* Assets.xcassets */; };
 		7FA213C82379A98B00970726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA213C62379A98B00970726 /* LaunchScreen.storyboard */; };
+		7FA213D62379AEC200970726 /* DogListNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213D52379AEC200970726 /* DogListNetworkController.swift */; };
+		7FA213D82379AEEB00970726 /* RepresentativeListNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213D72379AEEB00970726 /* RepresentativeListNetworkController.swift */; };
+		7FA213DA2379AF0200970726 /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213D92379AF0200970726 /* DogModel.swift */; };
+		7FA213DC2379AF2200970726 /* DogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213DB2379AF2200970726 /* DogTableViewController.swift */; };
+		7FA213DE2379AF3500970726 /* DogListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213DD2379AF3500970726 /* DogListController.swift */; };
+		7FA213E02379AF4600970726 /* RepresentativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213DF2379AF4600970726 /* RepresentativeModel.swift */; };
+		7FA213E42379AF7300970726 /* RepresentativeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213E32379AF7300970726 /* RepresentativeListController.swift */; };
+		7FA213E82379C57000970726 /* RepresentativeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA213E72379C57000970726 /* RepresentativeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7FA213B82379A98900970726 /* APIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA213BB2379A98900970726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA213BD2379A98900970726 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7FA213BF2379A98900970726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FA213C22379A98900970726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FA213C42379A98B00970726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FA213C72379A98B00970726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FA213C92379A98B00970726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FA213D52379AEC200970726 /* DogListNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListNetworkController.swift; sourceTree = "<group>"; };
+		7FA213D72379AEEB00970726 /* RepresentativeListNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeListNetworkController.swift; sourceTree = "<group>"; };
+		7FA213D92379AF0200970726 /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
+		7FA213DB2379AF2200970726 /* DogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewController.swift; sourceTree = "<group>"; };
+		7FA213DD2379AF3500970726 /* DogListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListController.swift; sourceTree = "<group>"; };
+		7FA213DF2379AF4600970726 /* RepresentativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeModel.swift; sourceTree = "<group>"; };
+		7FA213E32379AF7300970726 /* RepresentativeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeListController.swift; sourceTree = "<group>"; };
+		7FA213E72379C57000970726 /* RepresentativeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,86 @@
 		7FA213BA2379A98900970726 /* APIProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FA213E62379BA0B00970726 /* Representative */,
+				7FA213E52379B9CB00970726 /* Dog */,
 				7FA213BB2379A98900970726 /* AppDelegate.swift */,
 				7FA213BD2379A98900970726 /* SceneDelegate.swift */,
-				7FA213BF2379A98900970726 /* ViewController.swift */,
 				7FA213C12379A98900970726 /* Main.storyboard */,
 				7FA213C42379A98B00970726 /* Assets.xcassets */,
 				7FA213C62379A98B00970726 /* LaunchScreen.storyboard */,
 				7FA213C92379A98B00970726 /* Info.plist */,
 			);
 			path = APIProject;
+			sourceTree = "<group>";
+		};
+		7FA213CF2379AE1A00970726 /* Dog Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213D92379AF0200970726 /* DogModel.swift */,
+			);
+			path = "Dog Model";
+			sourceTree = "<group>";
+		};
+		7FA213D02379AE2C00970726 /* Dog View */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213DB2379AF2200970726 /* DogTableViewController.swift */,
+			);
+			path = "Dog View";
+			sourceTree = "<group>";
+		};
+		7FA213D12379AE3700970726 /* Dog Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213D52379AEC200970726 /* DogListNetworkController.swift */,
+				7FA213DD2379AF3500970726 /* DogListController.swift */,
+			);
+			path = "Dog Controller";
+			sourceTree = "<group>";
+		};
+		7FA213D22379AE3F00970726 /* Representative Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213DF2379AF4600970726 /* RepresentativeModel.swift */,
+			);
+			path = "Representative Model";
+			sourceTree = "<group>";
+		};
+		7FA213D32379AE5000970726 /* Representative View */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213E72379C57000970726 /* RepresentativeTableViewController.swift */,
+			);
+			path = "Representative View";
+			sourceTree = "<group>";
+		};
+		7FA213D42379AE5B00970726 /* Representative Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213D72379AEEB00970726 /* RepresentativeListNetworkController.swift */,
+				7FA213E32379AF7300970726 /* RepresentativeListController.swift */,
+			);
+			path = "Representative Controller";
+			sourceTree = "<group>";
+		};
+		7FA213E52379B9CB00970726 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213CF2379AE1A00970726 /* Dog Model */,
+				7FA213D02379AE2C00970726 /* Dog View */,
+				7FA213D12379AE3700970726 /* Dog Controller */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		7FA213E62379BA0B00970726 /* Representative */ = {
+			isa = PBXGroup;
+			children = (
+				7FA213D22379AE3F00970726 /* Representative Model */,
+				7FA213D32379AE5000970726 /* Representative View */,
+				7FA213D42379AE5B00970726 /* Representative Controller */,
+			);
+			path = Representative;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FA213C02379A98900970726 /* ViewController.swift in Sources */,
+				7FA213E82379C57000970726 /* RepresentativeTableViewController.swift in Sources */,
+				7FA213DC2379AF2200970726 /* DogTableViewController.swift in Sources */,
 				7FA213BC2379A98900970726 /* AppDelegate.swift in Sources */,
+				7FA213DE2379AF3500970726 /* DogListController.swift in Sources */,
+				7FA213DA2379AF0200970726 /* DogModel.swift in Sources */,
 				7FA213BE2379A98900970726 /* SceneDelegate.swift in Sources */,
+				7FA213D62379AEC200970726 /* DogListNetworkController.swift in Sources */,
+				7FA213E42379AF7300970726 /* RepresentativeListController.swift in Sources */,
+				7FA213E02379AF4600970726 /* RepresentativeModel.swift in Sources */,
+				7FA213D82379AEEB00970726 /* RepresentativeListNetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
