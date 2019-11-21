@@ -8,13 +8,13 @@
 
 import Foundation
 
-class RepresentativeListNetworkController: RepresentativeListController {
-    let baseURL = URL(string: "https://whoismyrepresentative.com/getall_mems.php?&output=json&zip=")!
+struct RepresentativeListNetworkController: RepresentativeListController {
+    let baseURL = "https://whoismyrepresentative.com/getall_mems.php?&output=json&zip="
     let session = URLSession.shared
-    let path = "84043"
+    let path: String
     
-    func getRepresentativeList(completion: @escaping (Result<RepresentativeList, RepresentativeListError>) -> Void) {
-        let representativeListURL = baseURL.appendingPathComponent(path)
+    func getRepresentativeList(completion: @escaping (Result<[Representative], RepresentativeListError>) -> Void) {
+        let representativeListURL = URL(string: baseURL + path)!
         
         let request = URLRequest(url: representativeListURL)
         
@@ -26,8 +26,8 @@ class RepresentativeListNetworkController: RepresentativeListController {
                 let decoder = JSONDecoder()
                 
                 do {
-                    let representativeList = try decoder.decode(RepresentativeList.self, from: data)
-                    completion(.success(representativeList))
+                    let representativeList = try decoder.decode(RepresentativeListItem.self, from: data)
+                    completion(.success(representativeList.results))
                 } catch {
                     print(error)
                     completion(.failure(.failed))

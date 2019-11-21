@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StateInfo: Codable {
+struct DataUSA: Codable {
     var isState: String
     var state: String
     var population: Int
@@ -23,7 +23,7 @@ struct StateInfo: Codable {
 }
 
 struct StateResult: Codable {
-    let stateInfo: [StateInfo]
+    let stateInfo: [DataUSA]
     
     enum CodingKeys: String, CodingKey {
         case stateInfo = "data"

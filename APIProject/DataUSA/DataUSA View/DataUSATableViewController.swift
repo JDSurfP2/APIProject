@@ -16,7 +16,7 @@ class StateTableViewController: UITableViewController,UISearchResultsUpdating {
         }
     }
     let searchController = UISearchController(searchResultsController: nil)
-    var filteredStates: [StateInfo] = []
+    var filteredStates: [DataUSA] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         searchController.searchResultsUpdater = self

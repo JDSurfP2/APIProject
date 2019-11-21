@@ -13,5 +13,5 @@ enum RepresentativeListError: Error {
 }
 
 protocol RepresentativeListController {
-    func getRepresentativeList(completion: @escaping (Result<RepresentativeList, RepresentativeListError>) -> Void)
+    func getRepresentativeList(completion: @escaping (Result<[Representative], RepresentativeListError>) -> Void)
 }

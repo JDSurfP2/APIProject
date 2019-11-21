@@ -8,17 +8,16 @@
 
 import Foundation
 
-struct RepresentativeList: Codable {
-    let repName: String
-    let repParty: String
-    let repState: String
-    let repDistrict: String
-    let repPhone: String
-    let repOffice: String
-    let repLink: URL
-    let repResults: [RepresentativeList]
+struct Representative: Codable {
+    let name: String
+    let party: String
+    let state: String
+    let district: String
+    let phone: String
+    let office: String
+    let link: String
 }
 
 struct RepresentativeListItem: Codable {
-    let results: [RepresentativeList]
+    let results: [Representative]
 }
